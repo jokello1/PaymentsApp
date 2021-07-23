@@ -1,0 +1,27 @@
+mpesa:
+  c2b-url-link: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate
+  b2c-url-link: https://sandbox.safaricom.co.ke/mpesa/b2c/v1/paymentrequest
+  auth-url-link: https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
+  command-id: CustomerPayBillOnline
+  command-id2: CustomerBuyGoodsOnline
+  short-code: 600247
+  confirmation-url: https://2748bb1246d9.ngrok.io/stemscence/confirmation
+  validation-url: http://2748bb1246d9.ngrok.io/stemscence/validation
+  consumer-key: r79bGBar96vCWgVimdGmrtciLzRl1jOu
+  consumer-secret: fLlxKKE6JmKATAa4
+  grant-type: client_credentials
+  register-url: https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl
+  oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
+  b2c-timeout-url: https://2748bb1246d9.ngrok.io/stemscence/timeout
+  b2c-result-url: https://2748bb1246d9.ngrok.io/stemscence/result
+  b2c-url-endpoint: https://sandbox.safaricom.co.ke/mpesa/b2c/v1/paymentrequest
+  b2c-initiator-password: password1#
+
+spring:
+  data:
+    mongodb:
+      #user: test
+      #password: passwordvalue
+      uri: mongodb://localhost:27017/UsersDb
+  live-reload:
+      instrumentation: true
